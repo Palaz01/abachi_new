@@ -1,0 +1,62 @@
+// TESTIMONIALS CAROUSEL
+
+#testimonials
+	.owl-carousel
+		.owl-nav
+			.owl-prev
+				background-color: rgba(85, 85, 85, .6)
+				border-radius: 100%
+				width: 30px
+				height: 30px	
+				
+				&:hover
+					background-color: rgba(184, 126, 74, .8)
+			.owl-next
+				background-color: rgba(85, 85, 85, .6)
+				border-radius: 100%
+				width: 30px
+				height: 30px
+				
+				&:hover
+					background-color: rgba(184, 126, 74, .8)
+		.owl-dots
+			.owl-dot 
+				span
+					background-color: $dark-gray
+			.owl-dot.active 
+				span
+					background-color: $light-gray
+		.item
+			hr 
+				border-color: $light-gray
+			p 
+				color: $light-gray
+	.bg 
+		position: absolute
+		display: block
+		width: 100%
+		height: 100%
+		top: 0
+		left: 0
+		z-index: -1
+		background: url(assets/images/surfing.jpg)
+		filter: grayscale(40%)
+		background-size: cover
+	.overlay
+		background-color: rgba(184, 126, 74, .4)
+		z-index: 0
+		width: 100%
+		height: 100%
+		position: absolute
+		top: 0
+		left: 0
+	p
+		color: #fff
+		z-index: 1
+
+@media (max-width: 1024px)
+@media (max-width: 768px)
+	#testimonials
+		.bg 
+			background-position: 800px 0
+@media (max-width: 576px)

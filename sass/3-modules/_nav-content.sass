@@ -1,0 +1,88 @@
+// NAVIGATION
+
+.navbar-toggler
+	&:focus
+		outline: none
+
+.navbar-brand
+	margin-right: 0px
+	img
+		height: 40px
+
+.navbar-toggler-icon
+	background-color: $brand-primary
+	color: #fff
+	padding-top: 3px
+	border-radius: 10%
+.navbar-collapse
+	z-index: 3
+	align-self: flex-end
+	justify-content: center
+	a
+		border: 1px solid $gray
+		border-radius: 3px
+		width: 140px
+		color: $dark-gray
+		background-color: #fff
+	li
+		text-align: center
+
+	a:hover
+		background-color: $brand-primary
+		color: #fff
+	
+.nav-info
+	min-width: 165px
+	.wpglobus-selector-link
+		a 
+			border: 1px solid $gray
+			border-radius: 3px
+			background-color: #fff
+		a:hover
+			background-color: $brand-light
+		a:active
+			background-color: $brand-light
+		.dropdown-menu
+			max-width: 75px !important
+			border: none
+			background-color: transparent
+			padding-top: 0px
+			.menu-item
+				max-width: 75px
+			li 
+				border: none
+				background-color: #fff
+
+@media (min-width: 992px) and (max-width: 1024px)
+	.navbar-collapse
+		a 
+			width: 120px
+			font-size: .9em
+@media (max-width: 768px)
+	.navbar-collapse
+		background-color: rgba(237, 238, 240, .9)
+		border: 1px solid $gray
+		border-radius: 1%
+		margin-top: 15px
+		padding: 15px 15px
+		li
+			margin-bottom: 5px
+		a
+			width: 100%
+			padding-top: 10px
+			padding-bottom: 10px
+			margin-bottom: 5px
+	.nav-info
+		z-index: 4
+		min-width: 75px
+		position: relative
+		background-color: #fff
+		.dropdown-menu
+			position: absolute
+			top: 45px
+			left: 0px
+			width: 75px
+		.wpglobus-selector-link
+			a 
+				padding-left: 10px
+@media (max-width: 576px)
