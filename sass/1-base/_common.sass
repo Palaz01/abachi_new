@@ -2,10 +2,10 @@
 
 	
 h1, h2,
-	+font($primary, 700, $dark-gray)
+	+font($primary, regular, #000)
 
 h3, h4, h5
-	+font($primary, 500, $dark-gray)
+	+font($primary, regular, #000)
 
 input,
 textarea
@@ -14,25 +14,28 @@ li
 	+font($primary, 400, $dark-gray)
 
 a
-	+font($secondary, bold, $dark-gray)
+	+font($secondary, 600, $dark-gray)
+	text-transform: uppercase
 .btn 	
 	+font($secondary, regular, $dark-gray)	
 
 p
 	+font($secondary, regular, $dark-gray)
 
+
 hr
-	width: 3%
-	border-width: 4px
-	border-color: $dark-gray
+	width: 250px
+	border-width: 1px
+	border-color: $brand-primary
 	margin-top: 25px
 
 .button-1
-	+button(#fff, $brand-light, 2px)
+	+button(#fff, $brand-primary, 0)
+	padding: 15px 65px
 	font-family: $secondary
-	font-weight: bold
+	font-weight: 600
+	text-transform: uppercase
 	border: none
-	border-radius: 3px
 
 
 .button-1:hover, .button-1:active

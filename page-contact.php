@@ -22,14 +22,27 @@ get_header(); ?>
 
 	<section id="contact">
 		<div class="container">
+ 			<div class="contact-intro text-center">
+				<h1 class="text-center"><?php echo $contact_title; ?></h1>
+				<p><?php echo $contact_text; ?></p>
+			</div>
 			<div class="row justify-content-center">
-				<div class="col-md-8 text-center padd">
+				<div class="col-sm-12 text-center padd">
 					<div class="contact-card">
-						<h3 class=""><?php echo $contact_title; ?></h3>
-						<p><?php echo $contact_text; ?></p>
-						<p class="text-left"><i class="material-icons">phone</i><span><?php echo $phone_number; ?></span></p>
-						<p class="text-left" style="margin-bottom: 25px"><i class="material-icons">mail_outline</i><span><?php echo $email_address; ?></span></p>
-						<?php echo do_shortcode(get_post_field('post_content', $postid)); ?>
+ 						<h3>Üzenetküldés</h3>
+						<div class="row">
+							<div class="col-md-5">
+ 								<p class="text-left">Abachi Wellness Kft</p>
+								<p class="text-left">Bank: 11111111-33333333-55555555</p>
+								<p class="text-left">Adószám: 0130131301-1-121</p>
+								<p class="text-left">Cím: 1223 Lorem utca 119</p>
+								<p class="text-left"><?php echo $phone_number; ?></p>
+								<p class="text-left" style="margin-bottom: 25px"><?php echo $email_address; ?></p>
+							</div>
+							<div class="col-md-7">
+								<?php echo do_shortcode(get_post_field('post_content', $postid)); ?>
+							</div>
+						</div>
 		            </div>
 				</div>
 			</div>

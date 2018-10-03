@@ -15,7 +15,7 @@
 	<footer class="footer">
 		<div class="container-fluid">
 			<div class="row top-footer justify-content-center">
-				<div class="col-sm-6 col-md-3 center">
+				<div class="col-sm-6 center">
 					<div class="top-footer-content ">
 						<?php
 	                    if(is_active_sidebar('footer-sidebar-1')){
@@ -24,16 +24,7 @@
 	                    ?>
 					</div>
 				</div>
-				<div class="col-md-3 center">
-					<div class="top-footer-content text-center">
-						<?php
-	                    if(is_active_sidebar('footer-sidebar-2')){
-	                    dynamic_sidebar('footer-sidebar-2');
-	                    }
-	                    ?>
-					</div>
-				</div>
-				<div class="col-sm-6 col-md-3 center">
+				<div class="col-sm-6 center">
 					<?php
 			        wp_nav_menu( array(
 			          'theme_location' => 'footer',
@@ -59,7 +50,7 @@
 		<div class="container-fluid">
 			<div class="row bottom-footer">
 				<div class="col bottom-footer-text">
-					<p>Halasz Consulting <?php the_date('Y'); ?></p>
+					<p>2018 Abachi welness Kft. - Minden jog fenntartva!</p><p>Honlapkészítés és e-marketing: InteliArt</p>
 				</div>
 			</div>
 		</div>
