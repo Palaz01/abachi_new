@@ -50,7 +50,6 @@ get_header(); ?>
 			</div>
 		</div>
 	</section>
-
 	<section id="news">
 		<div class="container">
 			<div class="title row justify-content-center">
@@ -79,5 +78,9 @@ get_header(); ?>
 			</div>
 		</div>
 	</section>
+
+
+	<?php get_template_part( 'template-parts/content', 'contact' ); ?>
+	
 	
 <?php get_footer(); ?>
