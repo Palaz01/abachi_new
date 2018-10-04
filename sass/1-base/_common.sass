@@ -1,6 +1,8 @@
 // BASE STYLES
 
-	
+[type=reset], [type=submit], button, html [type=button] 
+	-webkit-appearance: inherit
+
 h1, h2,
 	+font($primary, regular, #000)
 
@@ -16,6 +18,10 @@ li
 a
 	+font($secondary, 600, $dark-gray)
 	text-transform: uppercase
+
+html type[button]
+	background: transparent
+	border: none
 .btn 	
 	+font($secondary, regular, $dark-gray)	
 

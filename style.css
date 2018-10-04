@@ -144,6 +144,9 @@
     .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
       background: #869791; }
 
+[type=reset], [type=submit], button, html [type=button] {
+  -webkit-appearance: inherit; }
+
 h1, h2 {
   font-family: "Marcellus", serif;
   font-weight: regular;
@@ -170,6 +173,10 @@ a {
   font-weight: 600;
   color: #929292;
   text-transform: uppercase; }
+
+html type[button] {
+  background: transparent;
+  border: none; }
 
 .btn {
   font-family: "Open Sans", sans-serif;
@@ -740,5 +747,9 @@ footer .bottom-footer {
   width: 30%;
   background-color: rgba(0, 0, 0, 0.5);
   padding: 10px; }
+
+.gallery {
+  padding-top: 90px;
+  padding-bottom: 90px; }
 
 /*# sourceMappingURL=style.css.map */
