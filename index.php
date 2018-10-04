@@ -16,7 +16,7 @@ get_header(); ?>
 	<section id="blog-heading">
 		<div class="container-fluid">
 			<div class="row justify-content-center text-center">
-				<div class="col">
+				<div class="products-page-title">
 					<h2><?php single_post_title(); ?></h2>
 					<p>Lorem ipsum dolor sit amet.</p>
 				</div>

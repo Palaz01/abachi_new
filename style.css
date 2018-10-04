@@ -248,8 +248,12 @@ hr {
 #blog-heading {
   display: flex;
   align-items: center;
-  height: 135px;
-  background-color: #888888; }
+  min-height: 500px;
+  background: url("assets/images/abachi.jpg");
+  background-size: cover;
+  background-position: center center; }
+  #blog-heading.single-product-heading {
+    max-height: 300px; }
 
 #blogpage {
   padding-bottom: 75px;
@@ -259,32 +263,6 @@ hr {
 @media (min-width: 768px) and (max-width: 1200px) {
   #blogpage {
     padding-bottom: 350px; } }
-#services-page {
-  background-color: #edeef0; }
-
-#about-me {
-  margin-top: -80px;
-  padding-bottom: 75px; }
-
-#about-page-stock {
-  min-height: 135px;
-  background: #888888;
-  background-size: cover; }
-
-#testimonials {
-  padding: 100px 0 50px 0;
-  min-height: 400px;
-  position: relative;
-  background-size: cover;
-  display: flex;
-  align-items: center; }
-
-@media (max-width: 768px) {
-  #about-page-stock {
-    min-height: 200px; }
-
-  #about-me {
-    margin-top: -87px; } }
 #contact-page {
   padding-top: 80px; }
 
@@ -460,39 +438,13 @@ footer .bottom-footer {
 @media (max-width: 768px) {
   .servicecard {
     margin-bottom: 25px; } }
-#home-cta .bg {
-  position: absolute;
-  display: block;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  background: url(assets/images/time.jpg);
-  filter: grayscale(40%);
-  background-size: cover; }
-#home-cta .overlay {
-  background-color: rgba(184, 126, 74, 0.4);
-  z-index: 0;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0; }
-#home-cta h4 {
-  color: #fff;
-  z-index: 1; }
-#home-cta .btn {
-  margin-top: 25px;
-  font-size: 1.2em;
-  z-index: 1; }
-
 .product-card {
   box-shadow: 0 0 40px 0 rgba(118, 115, 112, 0.26);
   background-color: #fff;
   height: 100%;
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  margin-bottom: 25px; }
   .product-card h3 {
     padding: 20px 0 10px 0;
     margin-bottom: 0px;
@@ -527,22 +479,6 @@ footer .bottom-footer {
 @media (max-width: 768px) {
   .product-card {
     margin-bottom: 25px; } }
-.whyme-items {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin-bottom: 5px; }
-  .whyme-items .circle {
-    width: 15px;
-    height: 15px;
-    background-color: #d6b981;
-    border-radius: 50%;
-    align-self: flex-start;
-    margin: 5px 5px 0px 0px; }
-  .whyme-items p {
-    margin-left: 10px;
-    width: 80%; }
-
 .bottom-footer-text {
   display: flex;
   align-items: center;
@@ -619,11 +555,11 @@ footer .bottom-footer {
   justify-content: center;
   flex-basis: auto; }
   .navbar-collapse a {
-    width: 100px;
     color: #fff;
     font-size: 14px; }
   .navbar-collapse li {
-    text-align: center; }
+    text-align: center;
+    padding: 0 1rem; }
   .navbar-collapse a:hover {
     color: #d6b981; }
 
@@ -679,64 +615,6 @@ footer .bottom-footer {
       width: 75px; }
     .nav-info .wpglobus-selector-link a {
       padding-left: 10px; } }
-#services-hero .title {
-  padding: 90px;
-  position: relative; }
-  #services-hero .title .bg {
-    position: absolute;
-    display: block;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    background: url(assets/images/mountain.jpg);
-    filter: grayscale(40%);
-    background-size: cover; }
-  #services-hero .title h1 {
-    color: #fff;
-    background-color: rgba(184, 126, 74, 0.8);
-    padding: 10px;
-    border-radius: 4px;
-    z-index: 1; }
-  #services-hero .title .overlay {
-    background-color: rgba(184, 126, 74, 0.4);
-    z-index: 0;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0; }
-
-.first-service {
-  margin-top: -50px; }
-
-.services-item {
-  background-color: #fff;
-  padding: 20px;
-  box-shadow: 0 0 40px 0 rgba(118, 115, 112, 0.26);
-  margin-bottom: 100px; }
-  .services-item .material-icons {
-    font-size: 5em;
-    color: #d6b981;
-    margin-bottom: 25px; }
-  .services-item h3 {
-    margin-bottom: 25px; }
-  .services-item p {
-    margin-bottom: 25px; }
-  .services-item .btn {
-    margin-bottom: 25px; }
-  .services-item .morecontent span {
-    display: none; }
-  .services-item .morelink {
-    display: block;
-    text-align: center;
-    padding-top: 15px; }
-
-@media (max-width: 768px) {
-  .services-item {
-    margin-left: 10px;
-    margin-right: 10px; } }
 #about-me img {
   border-radius: 100%;
   margin-bottom: 25px;
@@ -846,16 +724,21 @@ footer .bottom-footer {
   #blogpage .title p {
     color: #fff; }
 
-#blogpostpage {
-  background-color: #edeef0; }
-  #blogpostpage .blogpost {
-    margin-top: -25px;
-    margin-bottom: 75px;
-    padding: 10px 10px 25px 10px;
-    box-shadow: 0 0 40px 0 rgba(118, 115, 112, 0.26);
-    background-color: #fff; }
-    #blogpostpage .blogpost .entry-meta {
-      padding-top: 25px;
-      padding-bottom: 25px; }
+#blogpostpage .blogpost {
+  margin-top: -25px;
+  margin-bottom: 75px;
+  padding: 10px 10px 25px 10px;
+  box-shadow: 0 0 40px 0 rgba(118, 115, 112, 0.26);
+  background-color: #fff; }
+#blogpostpage .single-product-text {
+  margin-top: 75px;
+  margin-bottom: 75px; }
+  #blogpostpage .single-product-text hr {
+    margin-bottom: 25px; }
+
+.products-page-title {
+  width: 30%;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px; }
 
 /*# sourceMappingURL=style.css.map */

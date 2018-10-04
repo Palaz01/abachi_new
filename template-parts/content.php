@@ -10,7 +10,7 @@
 ?>
 <div class="col-md-4">
 	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-			<div class="news-card text-center">
+			<div class="product-card">
 				<img class="img-fluid" src="<?php the_post_thumbnail(); ?>
 				<header class="entry-header">
 					<?php
@@ -21,17 +21,10 @@
 					endif;
 
 					if ( 'post' === get_post_type() ) : ?>
-					<div class="entry-meta">
-						<?php the_date(); ?>
-					</div><!-- .entry-meta -->
 					<?php
 					endif; ?>
 				</header><!-- .entry-header -->
-
 				<p><?php the_excerpt(); ?></p>
-
-
-			</div>
-		
+			</div>		
 	</article><!-- #post-<?php the_ID(); ?> -->
 </div>

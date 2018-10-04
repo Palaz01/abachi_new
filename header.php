@@ -56,7 +56,7 @@
 						<a class="nav-link" href="news.html">Hírek</a> 
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="blog.html">Blog</a>
+						<a class="nav-link" href="product.html">product</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="services.html">Szolgáltatások</a>

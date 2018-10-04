@@ -7,15 +7,11 @@
  * @package Halasz_Consulting
  */
 
+$backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );
+
 get_header(); ?>
-	<section id="blog-heading">
-		<div class="container-fluid">
-			<div class="row justify-content-center text-center">
-				<div class="col">
-					<h2><?php single_post_title(); ?></h2>
-				</div>
-			</div>
-		</div>
+	<section id="blog-heading" class="single-product-heading" style="background: url('<?php echo $backgroundImg[0] ?>') no-repeat;background-size: cover;background-position: center center;">
+
 	</section>
 
 	
