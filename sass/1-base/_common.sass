@@ -18,6 +18,9 @@ li
 a
 	+font($secondary, 600, $dark-gray)
 	text-transform: uppercase
+	&:hover
+		text-decoration: none
+		cursor: pointer
 
 html type[button]
 	background: transparent
@@ -42,23 +45,14 @@ hr
 	font-weight: 600
 	text-transform: uppercase
 	border: none
+	&:hover
+		cursor: pointer
 
+a.button-1 
+	color: #fff
 
 .button-1:hover, .button-1:active
 	background-color: $brand-primary
-	box-shadow: $boxshadow
-
-.button-2, .button-2:active
-	+button(#fff, transparent, 3px)
-	border: 1px solid #fff
-	font-family: $secondary
-	font-weight: bold
-
-.button-2:hover
-	+button(#fff, $brand-primary, 3px)
-	border: 1px solid transparent
-	font-family: $secondary
-	font-weight: bold
 	box-shadow: $boxshadow
 
 // MEDIA QUERY

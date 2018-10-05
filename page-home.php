@@ -73,13 +73,18 @@ get_header(); ?>
 				</div>
 				<?php 
 				endwhile;
-				wp_reset_postdata();
-				?>
+				wp_reset_postdata(); ?>
 			</div>
 		</div>
 	</section>
 
 	<?php get_template_part( 'template-parts/content', 'gallery' ); ?>
+	<div class="container text-center">	
+		<a href="abachi/galeria" class="button-1">Teljes galléria</a>
+		<br>
+		<br>
+		<br>
+	</div>
 	<?php get_template_part( 'template-parts/content', 'contact' ); ?>
 	
 	
