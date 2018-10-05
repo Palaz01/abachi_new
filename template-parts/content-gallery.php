@@ -12,11 +12,13 @@
 
 
 <section class="gallery">
-   <div class="container">
-      <div class="gallery-intro text-center">
+   <div class="gallery-intro text-center">
+      <div class="gallery-title">
          <h1 class="text-center">Galéria</h1>
          <p>Lorem ipsum dolor sit amet...</p>
       </div>
+   </div>
+   <div class="container">
       <?php echo do_shortcode('[gmedia id=1]'); ?>
    </div>
 </section>

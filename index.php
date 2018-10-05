@@ -17,7 +17,7 @@ get_header(); ?>
 		<div class="container-fluid">
 			<div class="row justify-content-center text-center">
 				<div class="products-page-title">
-					<h2><?php single_post_title(); ?></h2>
+					<h1><?php single_post_title(); ?></h1>
 					<p>Lorem ipsum dolor sit amet.</p>
 				</div>
 			</div>
