@@ -4,7 +4,7 @@
  *
  * @link https://codex.wordpress.org/Creating_an_Error_404_Page
  *
- * @package Halasz_Consulting
+ * @package abachi
  */
 
 get_header(); ?>
@@ -20,7 +20,7 @@ get_header(); ?>
 		  <div class="container">
 		  	<div class="row homelink align-items-center">
 		  		<div class="col-sm-12 text-center">
-		  			<h3>No content in this link. Homepage: <a href="<?php echo get_home_url(); ?>">http://halaszconsulting.ch</a></h3>
+		  			<h3>No content in this link. Homepage: <a href="<?php echo get_home_url(); ?>">http://abachiconsulting.ch</a></h3>
 		  		</div>
 		  	</div>
 		  </div> 

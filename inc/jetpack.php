@@ -4,7 +4,7 @@
  *
  * @link https://jetpack.com/
  *
- * @package Halasz_Consulting
+ * @package abachi
  */
 
 /**
@@ -14,11 +14,11 @@
  * See: https://jetpack.com/support/responsive-videos/
  * See: https://jetpack.com/support/content-options/
  */
-function halasz_consulting_jetpack_setup() {
+function abachi_jetpack_setup() {
 	// Add theme support for Infinite Scroll.
 	add_theme_support( 'infinite-scroll', array(
 		'container' => 'main',
-		'render'    => 'halasz_consulting_infinite_scroll_render',
+		'render'    => 'abachi_infinite_scroll_render',
 		'footer'    => 'page',
 	) );
 
@@ -28,7 +28,7 @@ function halasz_consulting_jetpack_setup() {
 	// Add theme support for Content Options.
 	add_theme_support( 'jetpack-content-options', array(
 		'post-details' => array(
-			'stylesheet' => 'halasz-consulting-style',
+			'stylesheet' => 'abachi-style',
 			'date'       => '.posted-on',
 			'categories' => '.cat-links',
 			'tags'       => '.tags-links',
@@ -37,12 +37,12 @@ function halasz_consulting_jetpack_setup() {
 		),
 	) );
 }
-add_action( 'after_setup_theme', 'halasz_consulting_jetpack_setup' );
+add_action( 'after_setup_theme', 'abachi_jetpack_setup' );
 
 /**
  * Custom render function for Infinite Scroll.
  */
-function halasz_consulting_infinite_scroll_render() {
+function abachi_infinite_scroll_render() {
 	while ( have_posts() ) {
 		the_post();
 		if ( is_search() ) :

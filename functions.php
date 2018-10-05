@@ -1,13 +1,13 @@
 <?php
 /**
- * Halasz Consulting functions and definitions
+ * abachi Consulting functions and definitions
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @package Halasz_Consulting
+ * @package abachi
  */
 
-if ( ! function_exists( 'halasz_consulting_setup' ) ) :
+if ( ! function_exists( 'abachi_setup' ) ) :
 	/**
 	 * Sets up theme defaults and registers support for various WordPress features.
 	 *
@@ -18,14 +18,14 @@ if ( ! function_exists( 'halasz_consulting_setup' ) ) :
 
 	require_once('bs4navwalker.php');
 
-	function halasz_consulting_setup() {
+	function abachi_setup() {
 		/*
 		 * Make theme available for translation.
 		 * Translations can be filed in the /languages/ directory.
-		 * If you're building a theme based on Halasz Consulting, use a find and replace
-		 * to change 'halasz-consulting' to the name of your theme in all the template files.
+		 * If you're building a theme based on abachi Consulting, use a find and replace
+		 * to change 'abachi' to the name of your theme in all the template files.
 		 */
-		load_theme_textdomain( 'halasz-consulting', get_template_directory() . '/languages' );
+		load_theme_textdomain( 'abachi', get_template_directory() . '/languages' );
 
 		// Add default posts and comments RSS feed links to head.
 		add_theme_support( 'automatic-feed-links' );
@@ -47,8 +47,8 @@ if ( ! function_exists( 'halasz_consulting_setup' ) ) :
 
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus( array(
-			'primary' => __( 'Primary', 'halasz-consulting' ),
-			'secondary' => __( 'Secondary', 'halasz-consulting' ),
+			'primary' => __( 'Primary', 'abachi' ),
+			'secondary' => __( 'Secondary', 'abachi' ),
 		) );
 
 		/*
@@ -64,7 +64,7 @@ if ( ! function_exists( 'halasz_consulting_setup' ) ) :
 		) );
 
 		// Set up the WordPress core custom background feature.
-		add_theme_support( 'custom-background', apply_filters( 'halasz_consulting_custom_background_args', array(
+		add_theme_support( 'custom-background', apply_filters( 'abachi_custom_background_args', array(
 			'default-color' => 'ffffff',
 			'default-image' => '',
 		) ) );
@@ -85,7 +85,7 @@ if ( ! function_exists( 'halasz_consulting_setup' ) ) :
 		) );
 	}
 endif;
-add_action( 'after_setup_theme', 'halasz_consulting_setup' );
+add_action( 'after_setup_theme', 'abachi_setup' );
 
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
@@ -94,44 +94,44 @@ add_action( 'after_setup_theme', 'halasz_consulting_setup' );
  *
  * @global int $content_width
  */
-function halasz_consulting_content_width() {
-	$GLOBALS['content_width'] = apply_filters( 'halasz_consulting_content_width', 640 );
+function abachi_content_width() {
+	$GLOBALS['content_width'] = apply_filters( 'abachi_content_width', 640 );
 }
-add_action( 'after_setup_theme', 'halasz_consulting_content_width', 0 );
+add_action( 'after_setup_theme', 'abachi_content_width', 0 );
 
 /**
  * Register widget area.
  *
  * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
  */
-function halasz_consulting_widgets_init() {
+function abachi_widgets_init() {
 	register_sidebar( array(
-		'name'          => esc_html__( 'Sidebar', 'halasz-consulting' ),
+		'name'          => esc_html__( 'Sidebar', 'abachi' ),
 		'id'            => 'sidebar-1',
-		'description'   => esc_html__( 'Add widgets here.', 'halasz-consulting' ),
+		'description'   => esc_html__( 'Add widgets here.', 'abachi' ),
 		'before_widget' => '<section id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</section>',
 		'before_title'  => '<h2 class="widget-title">',
 		'after_title'   => '</h2>',
 	) );
 }
-add_action( 'widgets_init', 'halasz_consulting_widgets_init' );
+add_action( 'widgets_init', 'abachi_widgets_init' );
 
 /**
  * Enqueue scripts and styles.
  */
-function halasz_consulting_scripts() {
-	wp_enqueue_style( 'halasz-consulting-style', get_stylesheet_uri() );
+function abachi_scripts() {
+	wp_enqueue_style( 'abachi-style', get_stylesheet_uri() );
 
-	wp_enqueue_script( 'halasz-consulting-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
+	wp_enqueue_script( 'abachi-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
-	wp_enqueue_script( 'halasz-consulting-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
+	wp_enqueue_script( 'abachi-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
 }
-add_action( 'wp_enqueue_scripts', 'halasz_consulting_scripts' );
+add_action( 'wp_enqueue_scripts', 'abachi_scripts' );
 
 /**
  * Implement the Custom Header feature.
@@ -169,7 +169,7 @@ $read_more = get_field('read_more');
 
 function new_excerpt_more($more) {
        global $post;
-	return '<a class="readmore" href="'. get_permalink($post->ID) . '">'. get_field('read_more') . '</a>';
+	return '<a class="readmore" href="'. get_permalink($post->ID) . '">Tovább</a>';
 }
 add_filter('excerpt_more', 'new_excerpt_more');
 

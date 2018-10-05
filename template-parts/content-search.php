@@ -4,7 +4,7 @@
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
- * @package Halasz_Consulting
+ * @package abachi
  */
 
 ?>
@@ -15,7 +15,7 @@
 
 		<?php if ( 'post' === get_post_type() ) : ?>
 		<div class="entry-meta">
-			<?php halasz_consulting_posted_on(); ?>
+			<?php abachi_posted_on(); ?>
 		</div><!-- .entry-meta -->
 		<?php endif; ?>
 	</header><!-- .entry-header -->
@@ -25,6 +25,6 @@
 	</div><!-- .entry-summary -->
 
 	<footer class="entry-footer">
-		<?php halasz_consulting_entry_footer(); ?>
+		<?php abachi_entry_footer(); ?>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-<?php the_ID(); ?> -->

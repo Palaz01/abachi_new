@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package Halasz_Consulting
+ * @package abachi
  */
 
 if ( ! is_active_sidebar( 'sidebar-1' ) ) {

@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
  *
- * @package Halasz_Consulting
+ * @package abachi
  */
 
 $backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );

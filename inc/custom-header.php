@@ -8,33 +8,33 @@
  *
  * @link https://developer.wordpress.org/themes/functionality/custom-headers/
  *
- * @package Halasz_Consulting
+ * @package abachi
  */
 
 /**
  * Set up the WordPress core custom header feature.
  *
- * @uses halasz_consulting_header_style()
+ * @uses abachi_header_style()
  */
-function halasz_consulting_custom_header_setup() {
-	add_theme_support( 'custom-header', apply_filters( 'halasz_consulting_custom_header_args', array(
+function abachi_custom_header_setup() {
+	add_theme_support( 'custom-header', apply_filters( 'abachi_custom_header_args', array(
 		'default-image'          => '',
 		'default-text-color'     => '000000',
 		'width'                  => 1000,
 		'height'                 => 250,
 		'flex-height'            => true,
-		'wp-head-callback'       => 'halasz_consulting_header_style',
+		'wp-head-callback'       => 'abachi_header_style',
 	) ) );
 }
-add_action( 'after_setup_theme', 'halasz_consulting_custom_header_setup' );
+add_action( 'after_setup_theme', 'abachi_custom_header_setup' );
 
-if ( ! function_exists( 'halasz_consulting_header_style' ) ) :
+if ( ! function_exists( 'abachi_header_style' ) ) :
 	/**
 	 * Styles the header image and text displayed on the blog.
 	 *
-	 * @see halasz_consulting_custom_header_setup().
+	 * @see abachi_custom_header_setup().
 	 */
-	function halasz_consulting_header_style() {
+	function abachi_header_style() {
 		$header_text_color = get_header_textcolor();
 
 		/*

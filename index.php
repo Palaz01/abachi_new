@@ -9,16 +9,18 @@
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
- * @package Halasz_Consulting
+ * @package abachi
  */
 
+$products_description = get_field('products_description');
+
 get_header(); ?>
-	<section id="blog-heading">
+	<section id="blog-heading" style="background: url('<?php the_field('products_cover_image', get_option('page_for_posts')); ?>');background-size: cover; background-position: center center">
 		<div class="container-fluid">
 			<div class="row justify-content-center text-center">
 				<div class="products-page-title">
 					<h1><?php single_post_title(); ?></h1>
-					<p>Lorem ipsum dolor sit amet.</p>
+					<p><?php the_field('products_description', get_option('page_for_posts')); ?></p>
 				</div>
 			</div>
 		</div>

@@ -4,7 +4,7 @@
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
- * @package Halasz_Consulting
+ * @package abachi
  */
 
 get_header(); ?>

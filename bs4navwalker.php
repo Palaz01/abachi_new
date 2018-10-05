@@ -59,7 +59,7 @@ class bootstrap_4_walker_nav_menu extends Walker_Nav_menu {
 Register Navbar
 */
 register_nav_menus( array(
-            'primary' => __( 'Primary', 'halasz-consulting' ),
-            'secondary' => __( 'Secondary', 'halasz-consulting' ),
-            'footer' => __( 'Footer', 'halasz-consulting')
+            'primary' => __( 'Primary', 'abachi' ),
+            'secondary' => __( 'Secondary', 'abachi' ),
+            'footer' => __( 'Footer', 'abachi')
             ) );

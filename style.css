@@ -255,10 +255,7 @@ hr {
 #blog-heading {
   display: flex;
   align-items: center;
-  min-height: 500px;
-  background: url("assets/images/abachi.jpg");
-  background-size: cover;
-  background-position: center center; }
+  min-height: 500px; }
   #blog-heading.single-product-heading {
     max-height: 300px; }
 
@@ -276,10 +273,9 @@ hr {
   display: flex;
   align-items: center;
   min-height: 500px;
-  background: url("assets/images/abachi.jpg");
+  max-width: 100%;
   background-size: cover;
-  background-position: center center;
-  margin-bottom: 60px; }
+  background-position: center center; }
   #contact-page .contact-intro .contact-title {
     width: 30%;
     margin-left: auto;
@@ -459,7 +455,6 @@ footer .bottom-footer {
 .product-card {
   box-shadow: 0 0 40px 0 rgba(118, 115, 112, 0.26);
   background-color: #fff;
-  height: 100%;
   display: flex;
   flex-direction: column;
   margin-bottom: 25px; }
@@ -645,8 +640,10 @@ footer .bottom-footer {
   #about-me img {
     width: 175px; } }
 .contact {
-  padding: 50px 0 75px 0;
-  background: #edeef0; }
+  padding: 50px 0 75px 0; }
+  .contact .contact-intro {
+    max-width: 975px;
+    margin: 0 auto 60px auto; }
   .contact .padd {
     padding-left: 15px;
     padding-right: 15px; }
@@ -780,10 +777,7 @@ footer .bottom-footer {
   #gallery-page .gallery .gallery-intro {
     display: flex;
     align-items: center;
-    min-height: 500px;
-    background: url("assets/images/abachi.jpg");
-    background-size: cover;
-    background-position: center center; }
+    min-height: 500px; }
     #gallery-page .gallery .gallery-intro .gallery-title {
       width: 30%;
       margin-left: auto;
