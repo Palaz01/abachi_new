@@ -27,7 +27,7 @@
 </head>
 
 <body <?php body_class(); ?>>
-	<nav class="navbar navbar-expand-lg ">
+	<nav class="navbar navbar-expand-md fixed-top">
 		<div class="container">
 			<a class="navbar-brand" href="<?php echo get_home_url(); ?>"><img src="<?php bloginfo('stylesheet_directory'); ?>/assets/images/logo.svg"></a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
