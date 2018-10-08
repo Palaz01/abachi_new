@@ -21,12 +21,11 @@ get_header(); ?>
 	        <?php while($loop->have_posts()) : $loop->the_post() ?>
 			<div class="item">
 				<img class="fhd" src="<?php the_field('slide_image'); ?>" >
-				<img class="small" src="<?php the_field('slide_image_small'); ?>">
 				<div class="overlay"></div>
 				<div class="caption animated fadeIn">
- 					<h1>Lorem ipsum</h1>
+ 					<h1><?php the_title(); ?></h1>
 					<p><?php the_field('slide_text'); ?></p>
-					<a href="#">Tovább</a>
+					<a href="<?php the_field('slide_link'); ?>">Tovább</a>
 				</div>
 			</div>
 			<?php endwhile ?>
@@ -60,7 +59,7 @@ get_header(); ?>
 			</div>
 			<div class="row d-flex">
 
-				<?php $the_query = new WP_Query( 'posts_per_page=3' ); ?>
+				<?php $the_query = new WP_Query( 'posts_per_page=3' ); ?> 
  
 				<?php while ($the_query -> have_posts()) : $the_query -> the_post(); ?>
 				 
@@ -74,6 +73,9 @@ get_header(); ?>
 				<?php 
 				endwhile;
 				wp_reset_postdata(); ?>
+			</div>
+			<div class="row justify-content-center">
+				<a href="abachi/szaunatipusok" class="button-2">Összes típus</a>
 			</div>
 		</div>
 	</section>

@@ -23,20 +23,20 @@ $our_contacts = get_field('our_contacts');
 			</div>
       </div>
       <div class="container">
-      <div class="row justify-content-center">
-			<div class="col-sm-12 text-center padd">
-				<div class="contact-card">
-					<h3>Üzenetküldés</h3>
-					<div class="row">
-						<div class="col-md-5">
-							<p class="text-left"><?php echo $our_contacts; ?></p>
-						</div>
-						<div class="col-md-7">
-							<?php echo do_shortcode('[contact-form-7 id="116" title="Magyar contact form"]'); ?>
+			<div class="row justify-content-center">
+				<div class="col-sm-12 text-center padd">
+					<div class="contact-card">
+						<h3>Üzenetküldés</h3>
+						<div class="row">
+							<div class="col-md-5">
+								<p class="text-left"><?php echo $our_contacts; ?></p>
+							</div>
+							<div class="col-md-7">
+								<?php echo do_shortcode('[contact-form-7 id="116" title="Magyar contact form"]'); ?>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-      </div>
       </div>
 </section>

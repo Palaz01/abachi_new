@@ -17,6 +17,8 @@
 				color: #fff
 			a 
 				font-size: 14px
+				position: relative 
+				z-index: 100
 			&:after
 				content: ''
 				width: 96%
@@ -31,13 +33,12 @@
 				position: absolute
 				top: 45%
 				display: block
-				background-color: rgba(85, 85, 85, .6)
+				background-color: rgba(0, 0, 0, .4)
 				border-radius: 100%
 				width: 45px
 				height: 45px
-				display: none
 				&:hover
-					background-color: rgba(184, 126, 74, .8)
+					background-color: $brand-primary
 				i
 					font-size: 2.5em
 			.owl-next
@@ -45,13 +46,12 @@
 				top: 45%
 				right: 0
 				display: block
-				background-color: rgba(85, 85, 85, .6)
+				background-color: rgba(0, 0, 0, .4)
 				border-radius: 100%
 				width: 45px
 				height: 45px
-				display: none
 				&:hover
-					background-color: rgba(184, 126, 74, .8)
+					background-color: $brand-primary
 				i
 					font-size: 2.5em
 		.owl-dots
@@ -72,21 +72,28 @@
 				top: 0
 				left: 0
 				display: none
-			.small
-				display: none
-@media (max-width: 1024px)
-	#hero
+@media (max-width: 1250px)
+	#hero 
 		.owl-carousel
-			.caption
-				font-size: 1.2em
-			.item
-				.fhd
-					display: none
-				.small
-					display: block
+			.caption 
+				width: 50%
+				top: 30%
+				left: 0
 @media (max-width: 768px)
 	#hero
 		.owl-carousel
+			height: 500px
+			.owl-stage-outer
+				height: 100%
+				.owl-stage
+					height: 100%
+					.owl-item
+						height: 100%
+						.item
+							height: 100%
+							img 
+								height: 100%
+								object-fit: cover
 			.caption
 				width: 100%
 				left: 0
@@ -99,12 +106,14 @@
 			.owl-nav
 				.owl-prev
 					font-size: .5em
-					top: 70%
+					bottom: 5%
+					top: auto
 					width: 	30px
 					height: 30px
 				.owl-next
 					font-size: .5em
-					top: 70%
+					bottom: 5%
+					top: auto
 					width: 30px
 					height: 30px
 

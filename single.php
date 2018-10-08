@@ -16,8 +16,6 @@ get_header(); ?>
 
 	
 	<section id="blogpostpage">
-		<div class="container">
-			<div class="row justify-content-center">
 
 			<?php
 			while ( have_posts() ) : the_post();
@@ -27,8 +25,6 @@ get_header(); ?>
 			endwhile; // End of the loop.
 			?>
 
-			</div>
-		</div>
 	</section>
 
 	<?php
