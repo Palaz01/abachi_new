@@ -6,8 +6,6 @@
 $slide_text = get_field('slide_text');
 $slide_image = get_field('slide_image');
 $slide_image_small = get_field('slide_image_small');
-$home_about_title = get_field('home_about_title');
-$home_about_text = get_field('home_about_text');
 
 get_header(); ?>
 	<section id="hero">
@@ -34,22 +32,8 @@ get_header(); ?>
 		</div>	
 	</section>
 
-	<section id="home-about">		
-		<div class="container">
-			<div class="row justify-content-center title">
-				<div class="col">
-					<h2 class="text-center"><?php echo $home_about_title; ?></h2>
-					<hr>
-				</div>
-			</div>
-			<div class="row justify-content-center">
-				<div class="col-sm-12 col-md-8 text-center">
-					<p><?php echo $home_about_text; ?></p>
-				</div>
-			</div>
-		</div>
-	</section>
-	<section id="news">
+ 	<?php get_template_part('template-parts/content', 'textbox'); ?>
+	<section id="products" class="home-products">
 		<div class="container">
 			<div class="title row justify-content-center">
 				<div class="col">
@@ -79,6 +63,13 @@ get_header(); ?>
 			</div>
 		</div>
 	</section>
+	
+	<div class="gallery-intro text-center">
+		<div class="gallery-title">
+			<h1 class="text-center"><?php the_field('gallery_title'); ?></h1>
+			<p><?php the_field('gallery_description'); ?></p>
+		</div>
+	</div>
 
 	<?php get_template_part( 'template-parts/content', 'gallery' ); ?>
 	<div class="container text-center">	

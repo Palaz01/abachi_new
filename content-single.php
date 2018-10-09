@@ -13,7 +13,7 @@
 	</div>
 </div>
 
-<section id="news">
+<section id="products">
 	<div class="container">
 		<div class="title row justify-content-center">
 			<div class="col">

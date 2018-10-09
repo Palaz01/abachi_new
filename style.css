@@ -240,13 +240,15 @@ a.button-1 {
 #home-about {
   padding: 90px 0; }
 
-#news {
+#products {
   padding: 90px 0;
   background-color: #b8a48d; }
-  #news .title {
+  #products .title {
     margin-bottom: 25px; }
-    #news .title h2, #news .title p {
+    #products .title h2, #products .title p {
       color: #fff; }
+  #products.home-products {
+    margin-bottom: 80px; }
 
 #blog-heading {
   display: flex;
@@ -748,6 +750,8 @@ footer .bottom-footer {
   #blogpostpage .single-product-text p {
     padding-left: 15px;
     padding-right: 15px; }
+#blogpostpage .contact {
+  padding-top: 0; }
 #blogpostpage .contact-title {
   background-color: #fff; }
 
@@ -762,31 +766,29 @@ footer .bottom-footer {
     color: #d6b981; }
 
 .gallery {
-  padding-top: 90px;
   padding-bottom: 35px; }
-  .gallery .gallery-intro {
-    margin-bottom: 45px; }
-    .gallery .gallery-intro p {
-      margin: 0; }
+
+.gallery-intro p {
+  margin: 0; }
 
 #gallery-page .gallery {
   padding-top: 0; }
-  #gallery-page .gallery .gallery-intro {
-    display: flex;
-    align-items: center;
-    min-height: 500px; }
-    #gallery-page .gallery .gallery-intro .gallery-title {
-      width: 30%;
-      margin-left: auto;
-      margin-right: auto;
-      background-color: rgba(0, 0, 0, 0.5);
-      padding: 10px; }
-      #gallery-page .gallery .gallery-intro .gallery-title h1 {
-        color: #d6b981; }
-      #gallery-page .gallery .gallery-intro .gallery-title p {
-        color: #fff; }
-      @media (max-width: 992px) {
-        #gallery-page .gallery .gallery-intro .gallery-title {
-          width: 80%; } }
+#gallery-page .gallery-intro {
+  display: flex;
+  align-items: center;
+  min-height: 500px; }
+  #gallery-page .gallery-intro .gallery-title {
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px; }
+    #gallery-page .gallery-intro .gallery-title h1 {
+      color: #d6b981; }
+    #gallery-page .gallery-intro .gallery-title p {
+      color: #fff; }
+    @media (max-width: 992px) {
+      #gallery-page .gallery-intro .gallery-title {
+        width: 80%; } }
 
 /*# sourceMappingURL=style.css.map */
