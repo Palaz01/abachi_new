@@ -65,7 +65,7 @@ get_header(); ?>
 	</section>
 	
 	<div class="gallery-intro text-center">
-		<div class="gallery-title">
+		<div class="gallery-title home-gallery-title">
 			<h1 class="text-center"><?php the_field('gallery_title'); ?></h1>
 			<p><?php the_field('gallery_description'); ?></p>
 		</div>

@@ -18,8 +18,10 @@ $our_contacts = get_field('our_contacts');
 <section class="contact">
       <div class="contact-intro text-center" style="background: url('<?php echo wp_get_attachment_url( get_post_thumbnail_id( $post->ID ) ); ?>'); background-size: cover;background-position: center center">
 			<div class="contact-title">
-				<h1 class="text-center"><?php echo $contact_title; ?></h1>
-				<p><?php echo $contact_text; ?></p>
+				<div class="container">
+					<h1 class="text-center"><?php echo $contact_title; ?></h1>
+					<p><?php echo $contact_text; ?></p>
+				</div>
 			</div>
       </div>
       <div class="container">

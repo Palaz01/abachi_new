@@ -250,6 +250,9 @@ a.button-1 {
   #products.home-products {
     margin-bottom: 80px; }
 
+.home-gallery-title {
+  margin-bottom: 40px; }
+
 #blog-heading {
   display: flex;
   align-items: center;
