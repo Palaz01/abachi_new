@@ -235,8 +235,62 @@ a.button-1 {
 
 .navbar {
   padding-top: 0px;
-  padding-bottom: 0px; }
+  padding-bottom: 0px;
+  justify-content: space-between;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 10; }
 
+.navbar-toggler:focus {
+  outline: none; }
+
+.navbar-brand {
+  height: 100%;
+  width: 145px;
+  background: #d6b981;
+  padding: 1%; }
+  .navbar-brand img {
+    width: 100%;
+    height: auto; }
+
+.navbar-toggler-icon {
+  background-color: #d6b981;
+  color: #fff;
+  padding-top: 3px; }
+
+.navbar-collapse {
+  z-index: 3;
+  justify-content: center;
+  flex-basis: auto; }
+  .navbar-collapse a {
+    color: #fff;
+    font-size: 14px; }
+  .navbar-collapse li {
+    text-align: center;
+    padding: 0 1rem; }
+  .navbar-collapse a:hover {
+    color: #d6b981; }
+
+@media (min-width: 992px) and (max-width: 1024px) {
+  .navbar-collapse a {
+    width: 120px;
+    font-size: 0.9em; } }
+@media (max-width: 768px) {
+  .navbar {
+    background: rgba(0, 0, 0, 0.8); }
+
+  .navbar-collapse {
+    width: 100%;
+    border-radius: 1%; }
+    .navbar-collapse ul {
+      padding-top: 30px;
+      padding-bottom: 30px; }
+    .navbar-collapse li {
+      margin-bottom: 5px; }
+    .navbar-collapse a {
+      width: 100%;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      margin-bottom: 5px; } }
 #home-about {
   padding: 90px 0; }
 
@@ -567,61 +621,6 @@ footer .bottom-footer {
     footer .center li {
       display: inline-block;
       padding: 5px; } }
-.navbar {
-  justify-content: space-between;
-  background: rgba(0, 0, 0, 0.6);
-  z-index: 10; }
-
-.navbar-toggler:focus {
-  outline: none; }
-
-.navbar-brand {
-  height: 100%;
-  width: 145px;
-  background: #fff; }
-  .navbar-brand img {
-    width: 100%;
-    height: auto; }
-
-.navbar-toggler-icon {
-  background-color: #d6b981;
-  color: #fff;
-  padding-top: 3px; }
-
-.navbar-collapse {
-  z-index: 3;
-  justify-content: center;
-  flex-basis: auto; }
-  .navbar-collapse a {
-    color: #fff;
-    font-size: 14px; }
-  .navbar-collapse li {
-    text-align: center;
-    padding: 0 1rem; }
-  .navbar-collapse a:hover {
-    color: #d6b981; }
-
-@media (min-width: 992px) and (max-width: 1024px) {
-  .navbar-collapse a {
-    width: 120px;
-    font-size: 0.9em; } }
-@media (max-width: 768px) {
-  .navbar {
-    background: rgba(0, 0, 0, 0.8); }
-
-  .navbar-collapse {
-    width: 100%;
-    border-radius: 1%; }
-    .navbar-collapse ul {
-      padding-top: 30px;
-      padding-bottom: 30px; }
-    .navbar-collapse li {
-      margin-bottom: 5px; }
-    .navbar-collapse a {
-      width: 100%;
-      padding-top: 10px;
-      padding-bottom: 10px;
-      margin-bottom: 5px; } }
 #about-me img {
   border-radius: 100%;
   margin-bottom: 25px;
