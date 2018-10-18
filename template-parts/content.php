@@ -11,7 +11,9 @@
 <div class="col-md-4">
 	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 			<div class="product-card">
-				<img class="img-fluid" src="<?php the_post_thumbnail(); ?>
+				<div class="product-card-image">
+					<img src="<?php the_post_thumbnail(); ?>
+				</div>
 				<header class="entry-header">
 					<?php
 					if ( is_singular() ) :

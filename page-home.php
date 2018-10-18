@@ -49,7 +49,9 @@ get_header(); ?>
 				 
 				<div class="col-md-4">
 					<div class="product-card text-left">
-						<img class="img-fluid" src="<?php the_post_thumbnail(); ?>
+						<div class="porduct-card-image">
+							<img src="<?php the_post_thumbnail(); ?>
+						</div>
 						<?php the_title( '<h3 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h3>' ); ?>
 						<p><?php the_excerpt(); ?></p>
 					</div>

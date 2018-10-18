@@ -160,8 +160,6 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
-remove_filter( 'the_content', 'wpautop' );
-
 
 // Replaces the excerpt "Read More" text by a link
 
