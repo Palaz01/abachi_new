@@ -167,7 +167,7 @@ $read_more = get_field('read_more');
 
 function new_excerpt_more($more) {
        global $post;
-	return '<a class="readmore" href="'. get_permalink($post->ID) . '">Tovább</a>';
+	return '...<a class="readmore" href="'. get_permalink($post->ID) . '">Tovább</a>';
 }
 add_filter('excerpt_more', 'new_excerpt_more');
 

@@ -6,6 +6,9 @@
 $slide_text = get_field('slide_text');
 $slide_image = get_field('slide_image');
 $slide_image_small = get_field('slide_image_small');
+$main_page_products_title = get_field('main_page_products_title');
+$main_page_products_description = get_field('main_page_products_description');
+
 
 get_header(); ?>
 	<section id="hero">
@@ -37,13 +40,16 @@ get_header(); ?>
 		<div class="container">
 			<div class="title row justify-content-center">
 				<div class="col">
-					<h2 class="text-center">Szauna típusok</h2>
-					<p class="text-center">Lorem ipsum dolor sit amet...</p>
+					<h2 class="text-center"><?php the_field('main_page_products_title'); ?></h2>
+					<p class="text-center"><?php the_field('main_page_products_description'); ?></p>
 				</div>
 			</div>
-			<div class="row d-flex">
+			<div class="row d-flex home-product-cards">
 
-				<?php $the_query = new WP_Query( 'posts_per_page=3' ); ?> 
+				<?php $the_query = new WP_Query( array(
+					'posts_per_page' => '3',
+					'orderby' => 'modified'
+				) ); ?> 
  
 				<?php while ($the_query -> have_posts()) : $the_query -> the_post(); ?>
 				 
