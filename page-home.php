@@ -53,7 +53,7 @@ get_header(); ?>
  
 				<?php while ($the_query -> have_posts()) : $the_query -> the_post(); ?>
 				 
-				<div class="col-md-4">
+				<div class="col-md-6 col-lg-4">
 					<div class="product-card text-left">
 						<div class="product-card-image">
 							<img src="<?php the_post_thumbnail(); ?>

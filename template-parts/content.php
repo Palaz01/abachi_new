@@ -8,7 +8,7 @@
  */
 
 ?>
-<div class="col-md-4">
+<div class="col-md-6 col-lg-4">
 	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 			<div class="product-card">
 				<div class="product-card-image">
