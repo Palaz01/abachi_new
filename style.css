@@ -380,6 +380,14 @@ footer .bottom-footer {
     font-size: 14px; }
     footer .bottom-footer p:first-child {
       margin-right: 30px; }
+      @media (max-width: 768px) {
+        footer .bottom-footer p:first-child {
+          margin-right: 0;
+          margin-bottom: 10px; } }
+  @media (max-width: 768px) {
+    footer .bottom-footer {
+      padding-top: 25px;
+      padding-bottom: 25px; } }
 
 .notfoundbg {
   min-height: 300px;
