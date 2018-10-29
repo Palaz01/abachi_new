@@ -48,7 +48,7 @@ get_header(); ?>
 
 				<?php $the_query = new WP_Query( array(
 					'posts_per_page' => '3',
-					'orderby' => 'modified'
+					'orderby' => 'date'
 				) ); ?> 
  
 				<?php while ($the_query -> have_posts()) : $the_query -> the_post(); ?>
